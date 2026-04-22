@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velta Co. — Business Solutions</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- External stylesheet (separate CSS file) -->
+  <link rel="stylesheet" href="Lucie.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       SEMANTIC HTML: <header> wraps the nav
+  ══════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">Vel<span>ta</span></a>
+
+      <!-- Navigation links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA button -->
+      <a href="#contact" class="btn btn-primary" style="font-size:0.82rem; padding:10px 22px;">
+        Get Started
+      </a>
+
+    </nav>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════
+       SEMANTIC: <main> holds all page sections
+  ══════════════════════════════════════════ -->
+  <main>
+
+    <!-- ─────────────────────────────
+         SECTION 1: HERO
+         Layout: CSS Grid (2-column)
+    ───────────────────────────────── -->
+    <section id="home" class="container">
+
+      <!-- Left column: text content -->
+      <div class="hero-text">
+
+        <p class="hero-eyebrow">Strategic Business Solutions</p>
+
+        <h1 class="hero-title">
+          Grow Your<br />
+          <em>Business</em><br />
+          With Confidence
+        </h1>
+
+        <p class="hero-desc">
+          Velta Co. helps organisations unlock growth through smart strategy,
+          digital innovation, and hands-on execution that delivers real results.
+        </p>
+
+        <!-- Flexbox button row -->
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">Our Services</a>
+          <a href="#about"    class="btn btn-outline">Learn More</a>
+        </div>
+
+        <!-- Flexbox stats row -->
+        <div class="hero-stats">
+          <div>
+            <div class="stat-number">10<span>+</span></div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="stat-number">150<span>+</span></div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div>
+            <div class="stat-number">97<span>%</span></div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+
+      </div><!-- /hero-text -->
+
+      <!-- Right column: visual highlight cards -->
+      <aside class="hero-visual" aria-label="Key highlights">
+
+        <div class="v-card">
+          <div class="v-icon">📈</div>
+          <div>
+            <div class="v-title">Revenue Growth</div>
+            <div class="v-sub">+138% average increase</div>
+          </div>
+        </div>
+
+        <div class="v-card">
+          <div class="v-icon">🌍</div>
+          <div>
+            <div class="v-title">Global Reach</div>
+            <div class="v-sub">35+ countries served</div>
+          </div>
+        </div>
+
+        <div class="v-card">
+          <div class="v-icon">⚡</div>
+          <div>
+            <div class="v-title">Fast Delivery</div>
+            <div class="v-sub">2-week sprint model</div>
+          </div>
+        </div>
+
+        <div class="v-card">
+          <div class="v-icon">🏆</div>
+          <div>
+            <div class="v-title">Award Winning</div>
+            <div class="v-sub">Forbes Top 50, 2024</div>
+          </div>
+        </div>
+
+      </aside>
+
+    </section><!-- /home -->
+
+
+    <!-- ─────────────────────────────
+         SECTION 2: SERVICES
+         Layout: CSS Grid (3-column)
+    ───────────────────────────────── -->
+    <section id="services" class="section bg-dark2">
+      <div class="container">
+
+        <!-- Section heading -->
+        <div class="text-center mb-52 reveal">
+          <p class="section-label">What We Do</p>
+          <h2 class="section-title">Our Core Services</h2>
+          <p class="section-sub">
+            Everything your business needs to grow — under one roof.
+          </p>
+        </div>
+
+        <!-- CSS Grid: 3-column card layout -->
+        <div class="services-grid stagger reveal">
+
+          <article class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>Strategic Consulting</h3>
+            <p>Market analysis and long-term roadmapping to keep you ahead of the competition.</p>
+            <div class="service-tags">
+              <span class="tag">Strategy</span>
+              <span class="tag">Roadmapping</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Digital Transformation</h3>
+            <p>Cloud infrastructure, automation, and AI integration to modernise your operations.</p>
+            <div class="service-tags">
+              <span class="tag">Cloud</span>
+              <span class="tag">AI</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🚀</div>
+            <h3>Growth Marketing</h3>
+            <p>SEO, paid media, and content strategies that consistently generate qualified leads.</p>
+            <div class="service-tags">
+              <span class="tag">SEO</span>
+              <span class="tag">Paid Ads</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Data &amp; Analytics</h3>
+            <p>Turn raw data into clear intelligence with dashboards your whole team can use.</p>
+            <div class="service-tags">
+              <span class="tag">BI</span>
+              <span class="tag">Reporting</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>Talent &amp; HR Strategy</h3>
+            <p>Build the right team structure and culture to attract and retain top talent.</p>
+            <div class="service-tags">
+              <span class="tag">HR</span>
+              <span class="tag">Culture</span>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🔒</div>
+            <h3>Risk &amp; Compliance</h3>
+            <p>Governance frameworks and compliance audits that protect your business and reputation.</p>
+            <div class="service-tags">
+              <span class="tag">Governance</span>
+              <span class="tag">Audit</span>
+            </div>
+          </article>
+
+        </div><!-- /services-grid -->
+
+      </div>
+    </section><!-- /services -->
+
+
+    <!-- ─────────────────────────────
+         SECTION 3: ABOUT
+         Layout: CSS Grid (2-column)
+    ───────────────────────────────── -->
+    <section id="about" class="section">
+      <div class="container">
+
+        <!-- CSS Grid: image + text side by side -->
+        <div class="about-grid reveal">
+
+          <!-- Left: decorative image box -->
+          <div class="about-image" role="img" aria-label="Our office">🏢</div>
+
+          <!-- Right: text content -->
+          <div class="about-content">
+            <p class="section-label">About Us</p>
+            <h2 class="section-title">Your Partner in Growth</h2>
+
+            <p>
+              Founded in 2014, Velta Co. was built on one belief: that businesses deserve
+              a partner who thinks long-term, acts with integrity, and delivers real,
+              measurable results.
+            </p>
+            <p>
+              We are a team of 30+ strategists and technologists working across Africa,
+              Europe, and Asia — bringing global thinking to every local challenge.
+            </p>
+
+            <!-- Flexbox value list with ::before checkmarks -->
+            <ul class="value-list" role="list">
+              <li class="value-item">Transparent and honest in everything we do</li>
+              <li class="value-item">Data-driven decisions, always</li>
+              <li class="value-item">Long-term partnerships, not one-off projects</li>
+              <li class="value-item">Results clearly measured and reported</li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary">Work With Us</a>
+          </div>
+
+        </div><!-- /about-grid -->
+
+      </div>
+    </section><!-- /about -->
+
+
+    <!-- ─────────────────────────────
+         SECTION 4: TEAM
+         Layout: CSS Grid (4-column)
+    ───────────────────────────────── -->
+    <section id="team" class="section bg-dark2">
+      <div class="container">
+
+        <div class="text-center mb-52 reveal">
+          <p class="section-label">The People</p>
+          <h2 class="section-title">Meet Our Team</h2>
+          <p class="section-sub">
+            The minds behind every strategy and every success story.
+          </p>
+        </div>
+
+        <!-- CSS Grid: 4-column team layout -->
+        <div class="team-grid stagger reveal">
+
+          <article class="team-card">
+            <div class="team-avatar" role="img" aria-label="James Kwizera">👨‍💼</div>
+            <h4>James Kwizera</h4>
+            <span>CEO &amp; Founder</span>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar" role="img" aria-label="Amara Diallo">👩‍💻</div>
+            <h4>Amara Diallo</h4>
+            <span>Chief Technology Officer</span>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar" role="img" aria-label="Sophie Mugenzi">👩‍🎨</div>
+            <h4>Sophie Mugenzi</h4>
+            <span>Head of Design</span>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar" role="img" aria-label="David Nkurunziza">👨‍📊</div>
+            <h4>David Nkurunziza</h4>
+            <span>Head of Strategy</span>
+          </article>
+
+        </div><!-- /team-grid -->
+
+      </div>
+    </section><!-- /team -->
+
+
+    <!-- ─────────────────────────────
+         SECTION 5: CONTACT
+         Layout: CSS Grid (2-column)
+    ───────────────────────────────── -->
+    <section id="contact" class="section">
+      <div class="container">
+
+        <div class="text-center mb-52 reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Let's Talk</h2>
+          <p class="section-sub">
+            Ready to grow? We respond to every message within 24 hours.
+          </p>
+        </div>
+
+        <!-- CSS Grid: info + form -->
+        <div class="contact-grid reveal">
+
+          <!-- Left column: contact information -->
+          <aside>
+            <p class="contact-info">
+              Reach us through any channel below, or send us a message and
+              we'll get back to you promptly.
+            </p>
+
+            <!-- Semantic <address> element -->
+            <address>
+
+              <div class="contact-detail">
+                <div class="c-icon" aria-hidden="true">📧</div>
+                <div>
+                  <div class="c-label">Email</div>
+                  <a href="mailto:hello@velta.co" class="c-value" style="color:var(--accent);">
+                    hello@velta.co
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="c-icon" aria-hidden="true">📞</div>
+                <div>
+                  <div class="c-label">Phone</div>
+                  <span class="c-value">+250 780 000 000</span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="c-icon" aria-hidden="true">📍</div>
+                <div>
+                  <div class="c-label">Office</div>
+                  <span class="c-value">KG 11 Ave, Kigali, Rwanda</span>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="c-icon" aria-hidden="true">🕐</div>
+                <div>
+                  <div class="c-label">Hours</div>
+                  <span class="c-value">Mon – Fri, 8:00am – 6:00pm CAT</span>
+                </div>
+              </div>
+
+            </address>
+          </aside><!-- /contact info -->
+
+          <!-- Right column: contact form -->
+          <div class="form-card">
+
+            <h3 style="font-size:1.4rem; margin-bottom:6px;">Send a Message</h3>
+            <p style="color:var(--muted); font-size:0.86rem; margin-bottom:22px;">
+              We read every message and reply personally.
+            </p>
+
+            <!-- CSS Grid: 2-column name row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="James" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Kwizera" autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="femail" placeholder="james@company.com" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="fphone">Phone <span style="color:var(--muted); font-weight:300;">(optional)</span></label>
+              <input type="tel" id="fphone" name="fphone" placeholder="+250 780 000 000" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="fmsg">Your Message</label>
+              <textarea id="fmsg" name="fmsg" placeholder="Tell us about your project or challenge…" rows="5"></textarea>
+            </div>
+
+            <!-- attribute selector: button[type="submit"] targets this in CSS -->
+            <button type="submit" class="btn btn-primary form-submit" onclick="handleSubmit()">
+              Send Message →
+            </button>
+
+            <!-- Success message shown via JS class toggle -->
+            <div class="success-msg" id="successMsg">
+              ✓ Message sent! We'll reply within 24 hours.
+            </div>
+
+          </div><!-- /form-card -->
+
+        </div><!-- /contact-grid -->
+
+      </div>
+    </section><!-- /contact -->
+
+  </main><!-- /main -->
+
+
+  <!-- ══════════════════════════════════════════
+       SEMANTIC: <footer>
+  ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+
+      <!-- Flexbox top row -->
+      <div class="footer-top">
+
+        <a href="#home" class="nav-logo">Vel<span>ta</span></a>
+
+        <!-- Footer navigation -->
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer-copy">
+        © 2026 Velta Co. · Built with Semantic HTML &amp; CSS (Grid · Flexbox · Box Model · Responsive)
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════
+       JAVASCRIPT — only for scroll effects
+       and form validation (no styling logic)
+  ══════════════════════════════════════════ -->
+  <script>
+    /* Nav scroll effect — adds .scrolled class */
+    window.addEventListener('scroll', function () {
+      var navbar = document.getElementById('navbar');
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    /* Scroll reveal — adds .visible class to .reveal elements */
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      observer.observe(el);
+    });
+
+    /* Form submit handler */
+    function handleSubmit() {
+      var name  = document.getElementById('fname').value.trim();
+      var email = document.getElementById('femail').value.trim();
+      var msg   = document.getElementById('fmsg').value.trim();
+
+      if (!name || !email || !msg) {
+        alert('Please fill in your name, email and message before sending.');
+        return;
+      }
+
+      /* Show success message */
+      document.getElementById('successMsg').classList.add('show');
+
+      /* Clear fields */
+      document.getElementById('fname').value  = '';
+      document.getElementById('lname').value  = '';
+      document.getElementById('femail').value = '';
+      document.getElementById('fphone').value = '';
+      document.getElementById('fmsg').value   = '';
+
+      /* Hide after 5 seconds */
+      setTimeout(function () {
+        document.getElementById('successMsg').classList.remove('show');
+      }, 5000);
+    }
+  </script>
+
+</body>
+</html>
